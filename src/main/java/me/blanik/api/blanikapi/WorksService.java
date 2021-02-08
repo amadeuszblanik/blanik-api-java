@@ -8,15 +8,12 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 
 import org.json.JSONObject;
-import io.github.cdimascio.dotenv.Dotenv;
 
 public class WorksService {
-    Dotenv dotenv = Dotenv.load();
-
     private String baseUrl = "https://cdn.contentful.com";
-    String spaceId = dotenv.get("CONTENTFUL_SPACE_ID");
-    String environmentId = dotenv.get("CONTENTFUL_ENVIRONMENT_ID");
-    String accessToken = dotenv.get("CONTENTFUL_ACCESS_TOKEN");
+    String spaceId = System.getenv("CONTENTFUL_SPACE_ID");
+    String environmentId = System.getenv("CONTENTFUL_ENVIRONMENT_ID");
+    String accessToken = System.getenv("CONTENTFUL_ACCESS_TOKEN");
 
     private URI getApiUrl (String fetchUrl) {
         URI uri = URI.create(baseUrl + "/spaces/" + spaceId + "/" + fetchUrl + "?access_token=" + accessToken);
