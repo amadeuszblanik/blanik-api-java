@@ -17,7 +17,7 @@ public class HomeController {
                 Map.entry("positionShort","Frontend Developer"),
                 Map.entry("location","Rybnik, Poland"),
                 Map.entry("motto","I am the one who make IT works!"),
-                Map.entry("readMore", Map.of("about-me", "/about-me", "skills", "/skills", "experience", "/experience"))
+                Map.entry("readMore", Map.of("about-me", "/about-me", "skills", "/skills", "experience", "/experience", "works", "/works"))
         );
     }
 }
