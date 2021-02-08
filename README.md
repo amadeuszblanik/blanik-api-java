@@ -1,0 +1,11 @@
+
+# blanik-api
+**WIP** WORK IN PROGRESS
+
+
+## Environment
+```dotenv
+CONTENTFUL_SPACE_ID=
+CONTENTFUL_ENVIRONMENT_ID=master
+CONTENTFUL_ACCESS_TOKEN=
+```
